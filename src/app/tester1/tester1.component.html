@@ -1,0 +1,12 @@
+<h2>Names</h2>
+
+<div *ngIf="names.length > 0">
+  <ul *ngFor="let name of names">
+    <li>{{ name }}</li>
+  </ul>
+</div>
+<div *ngIf="names.length == 0">No names received yet.</div>
+
+<p>
+  <button (click)="refresh()">Refresh names</button>
+</p>
